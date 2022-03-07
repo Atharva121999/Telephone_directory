@@ -32,3 +32,10 @@ a.update_one({"Name":"Anil"},{"$set":{"place":"Chennai"}})
 for item in a.find():
   print(item)
 
+# Delrting Records
+a.delete_one({"name":"Haldiram"})
+for item in a.find():
+  print(item)
+
+
+
